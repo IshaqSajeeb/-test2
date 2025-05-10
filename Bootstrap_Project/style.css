@@ -1,0 +1,237 @@
+/* General Styles */
+body {
+    font-family: 'Times New Roman', Times, sans-serif;
+    line-height: 1.6;
+    color: black;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header Styles */
+header {
+    background-color: #343a40;
+    /* Dark background color */
+    padding: 10px 0;
+}
+
+header .navbar {
+    padding: 0;
+    background-color: #dc3545;
+    /* Bootstrap's red color for a bolder look */
+}
+
+header .navbar-nav .nav-item .nav-link {
+    color: #fff !important;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+header .navbar-nav .nav-item .nav-link:hover {
+    color: greenyellow !important;
+    text-decoration: underline;
+}
+
+header .navbar .navbar-brand img {
+    width: 100px;
+}
+
+header .navbar-toggler {
+    border-color: black;
+}
+
+header .navbar-toggler-icon {
+    background-color: grey;
+}
+
+header .navbar-collapse {
+    justify-content: space-between;
+}
+
+header .navbar .form-control {
+    width: 200px;
+}
+
+header .navbar .btn-outline-light {
+    color: white;
+    border-color: white;
+}
+
+header .navbar .btn-outline-light:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Carousel Section */
+.carousel-item {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-item .carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.carousel-caption h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.carousel-caption .btn {
+    font-size: 1.1rem;
+    padding: 10px 30px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #97cafa;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    background-color: white;
+    color: #333;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background-color: white;
+}
+
+/* Features Section */
+.features {
+    background-color: #fff;
+}
+
+.feature-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item h3 {
+    margin: 20px 0 10px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #f8f9fa;
+}
+
+.testimonial {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    font-style: italic;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 40px 0;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .footer-section {
+    flex: 1;
+    padding: 0 20px;
+}
+
+footer .footer-section h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+footer .footer-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+footer .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer .footer-section ul li {
+    margin-bottom: 10px;
+}
+
+footer .footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+footer .footer-section ul li a:hover {
+    color: greenyellow;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.social-links a {
+    font-size: 1.5rem;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: greenyellow;
+}
+
+footer .footer-bottom {
+    text-align: center;
+    background-color: #212529;
+    padding: 10px 0;
+    font-size: 1rem;
+}

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Elite IT Institute</title>
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header Start -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="Assets/Image/Elite Technology logo.png" alt="Elite IT Institute Logo" width="100px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="About Us.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Courses.html">Courses</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Admit Now.html">Admit Now</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Success Stories.html">Success Stories</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Reviews.html">Reviews</a></li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                    <!-- Buttons -->
+                    <div class="d-flex ms-3">
+                        <button type="button" class="btn btn-light me-2" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">Login</button>
+                        <button type="button" class="btn btn-light" data-bs-toggle="modal"
+                            data-bs-target="#signupModal">Register</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="loginEmail" placeholder="Enter your email"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginPassword"
+                                placeholder="Enter your password" required>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Signup Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Register</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="signupName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="signupName" placeholder="Enter your full name"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="signupEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="signupEmail" placeholder="Enter your email"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="signupPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="signupPassword"
+                                placeholder="Enter your password" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="signupConfirmPassword" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="signupConfirmPassword"
+                                placeholder="Confirm your password" required>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Carousel Start -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('Assets/Image/BG\ Image.jpg');">
+                <div class="carousel-caption text-start">
+                    <h1>Welcome to Elite IT Institute</h1>
+                    <p>Your gateway to a successful career in IT.</p>
+                    <a href="About Us.html" class="btn btn-light btn-lg">Get Started</a>
+                </div>
+            </div>
+            <div class="carousel-item"
+                style="background-image: url('Assets/Image/Futuristic-technological-advance-of-generative-AI-generating-code.-Trailblazing.jpeg.webp');">
+                <div class="carousel-caption text-center">
+                    <h1>Explore Our Features</h1>
+                    <p>Learn more about what makes us unique.</p>
+                    <a href="Courses.html" class="btn btn-light btn-lg">Learn More</a>
+                </div>
+            </div>
+            <div class="carousel-item"
+                style="background-image: url('Assets/Image/employment_income_alternative_2_landscape.jpg');">
+                <div class="carousel-caption text-end">
+                    <h1>Join Our Community</h1>
+                    <p>Become a part of our growing family.</p>
+                    <button type="button" class="btn btn-warning btn-lg" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">Register</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- Hero Section -->
+    <section class="hero bg-secondary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Your gateway to a successful career in IT</h1>
+            <p class="lead">Become an IT Pro & Rule the Digital World
+                With a vision to turn manpower into assets, Elite IT Institute is ready to enhance your learning experience with skilled mentors and an updated curriculum. Pick your desired course from more than 45 trendy options.</p>
+            <a href="Courses.html" class="btn btn-light btn-lg">Explore Courses</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Why Choose Us?</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div class="feature-item p-4">
+                        <img src="Assets/Image/2639934_training_icon.png" alt="Expert Instructors" width="60"
+                            class="mb-3">
+                        <h3>Expert Instructors</h3>
+                        <p>Learn from industry professionals with years of experience.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="feature-item p-4">
+                        <img src="Assets/Image/969264_courses_flipchart_training_blackboard_education_icon.png"
+                            alt="Hands-On Training" width="60" class="mb-3">
+                        <h3>Hands-On Training</h3>
+                        <p>Gain practical skills through real-world projects and labs.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="feature-item p-4">
+                        <img src="Assets/Image/4417115_headset_operator_person_support_mic_icon.png"
+                            alt="Career Support" width="60" class="mb-3">
+                        <h3>Career Support</h3>
+                        <p>Get job placement assistance and career guidance.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="feature-item p-4">
+                        <img src="Assets/Image/projects.png" alt="Real-World Projects" width="100" class="mb-3">
+                        <h3>Real-World Projects</h3>
+                        <p>Work on industry projects and build a strong portfolio.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="feature-item p-4">
+                        <img src="Assets/Image/Flexible Schedules Icon.jpg" alt="Flexible Schedules" width="100" class="mb-3">
+                        <h3>Flexible Schedules</h3>
+                        <p>Choose a learning schedule that fits your lifestyle.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="feature-item p-4">
+                        <img src="Assets/Image/Certification Icon.webp" alt="Certification" width="80" class="mb-3">
+                        <h3>Certification</h3>
+                        <p>Earn recognized certifications to advance your career.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">What Our Students Say</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial p-4">
+                        <p>"The courses were top-notch, and the support was amazing. I landed my dream job thanks to
+                            Elite IT Institute!"</p>
+                        <strong>Imtiaz Khan</strong><br>
+                        <em>Web Developer</em>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial p-4">
+                        <p>"I learned so much during my time at Elite IT Institute. The instructors were experienced,
+                            and the career services helped me secure a job after graduation."</p>
+                        <strong>Kabir Chowdhury</strong><br>
+                        <em>Software Engineer</em>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial p-4">
+                        <p>"I couldn't have asked for a better experience. The hands-on training was invaluable, and the
+                            flexible schedule made it easy to balance with my job."</p>
+                        <strong>Tomal Ahmed</strong><br>
+                        <em>IT Specialist</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Start -->
+    <footer>
+        <div class="footer-content container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Elite IT Institute is a leading training provider specializing in IT courses, certifications, and
+                    career support to help you launch a successful career in technology.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="About Us.html">About</a></li>
+                    <li><a href="Courses.html">Courses</a></li>
+                    <li><a href="Admit Now.html">Admit Now</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Phone: (123) 456-7890</li>
+                    <li>Email: info@eliteinstitute.com</li>
+                    <li>Address: 123 IT Street, Tech City, 56789</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 footer-bottom">
+                <p>&copy; 2025 Elite IT Institute. All rights reserved.</p>
+            </div>
+            <div class="col-6 footer-bottom">
+
+                <div class="social-links">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

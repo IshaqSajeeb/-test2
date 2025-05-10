@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Elite IT Institute</title>
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <!-- Font Awesome CDN for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+
+        /* Courses Hero Section */
+        .courses-hero {
+            background-color: #007bff;
+            padding: 100px 0;
+        }
+
+        .courses-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .courses-hero p {
+            font-size: 1.5rem;
+        }
+
+        /* Courses List Section */
+        .courses-list {
+            padding: 80px 0;
+        }
+
+        .courses-list h2 {
+            margin-bottom: 50px;
+        }
+
+        .course-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .course-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .course-card img {
+            border-radius: 10px;
+        }
+
+        .course-card h3 {
+            margin: 20px 0 10px;
+        }
+
+        .course-card p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        /* Call to Action Section */
+        .cta {
+            background-color: #f8f9fa;
+            padding: 80px 0;
+        }
+
+        .cta h2 {
+            margin-bottom: 20px;
+        }
+
+        .cta p {
+            font-size: 1.2rem;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Start -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="Assets/Image/Elite Technology logo.png" alt="Elite IT Institute Logo" width="100px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="About Us.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Courses.html">Courses</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Admit Now.html">Admit Now</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Success Stories.html">Success Stories</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Reviews.html">Reviews</a></li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                    <!-- Buttons -->
+                    <div class="d-flex ms-3">
+                        <button type="button" class="btn btn-light me-2" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">Login</button>
+                        <button type="button" class="btn btn-light" data-bs-toggle="modal"
+                            data-bs-target="#signupModal">Register</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header End -->
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="loginEmail" placeholder="Enter your email"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginPassword"
+                                placeholder="Enter your password" required>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Signup Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Register</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="signupName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="signupName" placeholder="Enter your full name"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="signupEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="signupEmail" placeholder="Enter your email"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="signupPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="signupPassword"
+                                placeholder="Enter your password" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="signupConfirmPassword" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="signupConfirmPassword"
+                                placeholder="Confirm your password" required>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Courses Hero Section -->
+    <section class="courses-hero bg-secondary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Our Popular Courses</h1>
+            <p class="lead">Explore our wide range of IT courses designed to boost your career. We have designed our courses with the most demanding professional skills. The knowledge, experience, and expertise gained through the program will ensure your desired job in the global market. From the list below you can enroll to any online or offline courses at any time.</p>
+        </div>
+    </section>
+
+    <!-- Courses List Section -->
+    <section class="courses-list py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Featured Courses</h2>
+            <div class="row">
+                <!-- Course 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="course-card p-4 text-center">
+                        <img src="Assets/Image/Web Development.jpg" alt="Web Development" class="img-fluid mb-3">
+                        <h3>Web Development</h3>
+                        <p>Learn to build responsive and dynamic websites using HTML, CSS, JavaScript, and more.</p>
+                        <mark class="btn btn-outline-primary" style="color: rgb(31, 29, 27);">15000TK</mark>
+                        <a href="Course Details.html" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+                <!-- Course 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="course-card p-4 text-center">
+                        <img src="Assets/Image/datascience.webp" alt="Data Science" class="img-fluid mb-3">
+                        <h3>Data Science</h3>
+                        <p>Master data analysis, machine learning, and data visualization with Python and R.</p>
+                        <mark class="btn btn-outline-primary" style="color: rgb(31, 29, 27);">25000TK</mark>
+                        <a href="#" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+                <!-- Course 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="course-card p-4 text-center">
+                        <img src="Assets/Image/Cyber.jpeg" alt="Cybersecurity" class="img-fluid mb-3">
+                        <h3>Cybersecurity</h3>
+                        <p>Gain expertise in securing networks, systems, and applications from cyber threats.</p>
+                        <mark class="btn btn-outline-primary" style="color: rgb(31, 29, 27);">30000TK</mark>
+                        <a href="#" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+                <!-- Course 4 -->
+                <div class="col-md-4 mb-4">
+                    <div class="course-card p-4 text-center">
+                        <img src="Assets/Image/mobile-apps.jpg" alt="Mobile App Development" class="img-fluid mb-3">
+                        <h3>Mobile App Development</h3>
+                        <p>Build cross-platform mobile apps using Flutter and React Native.</p>
+                        <mark class="btn btn-outline-primary" style="color: rgb(31, 29, 27);">15000TK</mark>
+                        <a href="#" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+                <!-- Course 5 -->
+                <div class="col-md-4 mb-4">
+                    <div class="course-card p-4 text-center">
+                        <img src="Assets/Image/cloud computing.jpg" alt="Cloud Computing" class="img-fluid mb-3">
+                        <h3>Cloud Computing</h3>
+                        <p>Learn to deploy and manage applications on AWS, Azure, and Google Cloud.</p>
+                        <mark class="btn btn-outline-primary" style="color: rgb(31, 29, 27);">12000TK</mark>
+                        <a href="#" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+                <!-- Course 6 -->
+                <div class="col-md-4 mb-4">
+                    <div class="course-card p-4 text-center">
+                        <img src="Assets/Image/UI-UX-Design-Trends.jpg" alt="UI/UX Design" class="img-fluid mb-3">
+                        <h3>UI/UX Design</h3>
+                        <p>Design user-friendly interfaces and enhance user experiences with Figma and Adobe XD.</p>
+                        <mark class="btn btn-outline-primary" style="color: rgb(31, 29, 27);">20000TK</mark>
+                        <a href="#" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta bg-light py-5">
+        <div class="container text-center">
+            <h2>Ready to Start Your IT Journey? Admission Is Going on</h2>
+            <p class="lead mb-4">Join Elite IT Institute today and take the first step toward a successful career in IT.
+                Enroll to any online or offline course now, take one step ahead towards a competent career.
+            </p>
+            <a href="Admit Now.html" class="btn btn-primary btn-lg">Admit Now</a>
+        </div>
+    </section>
+
+
+
+    <!-- Footer Start -->
+    <footer>
+        <div class="footer-content container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Elite IT Institute is a leading training provider specializing in IT courses, certifications, and
+                    career support to help you launch a successful career in technology.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="About Us.html">About</a></li>
+                    <li><a href="Courses.html">Courses</a></li>
+                    <li><a href="Admit Now.html">Admit Now</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Phone: (123) 456-7890</li>
+                    <li>Email: info@eliteinstitute.com</li>
+                    <li>Address: 123 IT Street, Tech City, 56789</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 footer-bottom">
+                <p>&copy; 2025 Elite IT Institute. All rights reserved.</p>
+            </div>
+            <div class="col-6 footer-bottom">
+
+                <div class="social-links">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

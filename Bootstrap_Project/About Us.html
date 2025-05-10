@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Elite IT Institute</title>
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <!-- Font Awesome CDN for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Header Start -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="Assets/Image/Elite Technology logo.png" alt="Elite IT Institute Logo" width="100px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="About Us.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Courses.html">Courses</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Admit Now.html">Admit Now</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Success Stories.html">Success Stories</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Reviews.html">Reviews</a></li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                    <!-- Buttons -->
+                    <div class="d-flex ms-3">
+                        <button type="button" class="btn btn-light me-2" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">Login</button>
+                        <button type="button" class="btn btn-light" data-bs-toggle="modal"
+                            data-bs-target="#signupModal">Register</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="loginEmail" placeholder="Enter your email"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginPassword"
+                                placeholder="Enter your password" required>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Signup Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Register</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="signupName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="signupName" placeholder="Enter your full name"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="signupEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="signupEmail" placeholder="Enter your email"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="signupPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="signupPassword"
+                                placeholder="Enter your password" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="signupConfirmPassword" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="signupConfirmPassword"
+                                placeholder="Confirm your password" required>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- About Us Hero Section -->
+    <section class="about-hero bg-secondary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">About Elite IT Institute</h1>
+            <p class="lead">Empowering the next generation of IT professionals.
+                Elite IT is an institution where empowering the community with an excellent standard of learning is what we desire. We endeavour for the continuous improvement of our leaders who will work to construct a better future. We will continue to share our knowledge for contributing to the success of individuals and to serve society in the best interest.</p>
+        </div>
+    </section>
+
+    <!-- About Us Content Section -->
+    <section class="about-content py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="Assets/Image/About it-.jpeg" width="100%" alt="About Us Image" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                    <h2>Who We Are</h2>
+                    <p>
+                        Elite IT Institute is a leading institution dedicated to providing high-quality IT education and
+                        training.
+                        Our mission is to equip students with the skills and knowledge needed to excel in the
+                        ever-evolving tech industry.
+                    </p>
+                    <p>
+                        With a team of experienced instructors and state-of-the-art facilities, we offer a wide range of
+                        courses
+                        designed to meet the demands of today's job market. Whether you're a beginner or an experienced
+                        professional,
+                        we have something for everyone.
+                    </p>
+                    <a href="Courses.html" class="btn btn-primary">Explore Our Courses</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission and Vision Section -->
+    <section class="mission-vision bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Our Mission</h2>
+                    <p>
+                        To provide accessible, high-quality IT education that empowers individuals to achieve their
+                        career goals and contribute to the growth of the tech industry. Creative IT Institute is the harbor of thousands of successful freelancers in Bangladesh. We have trained and produced more than 70,000 freelancers in the past 15 years. We nurture the young talent by sharing knowledge and help students find the desired jobs to become financially solvent.
+                        <img src="Assets/Image/ourmission-1-16.jpg" alt="">
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <h2>Our Vision</h2>
+                    <p>
+                        Our goal is to be one of the best IT training institutes in the world by providing quality training to learners.To be the leading IT institute recognized for excellence in education, innovation, and student
+                        success. In a fast pacing world, where every sector relies on technology, you need to develop IT skills to secure a better future. we have been able to make more than 70,000 IT experts who are currently working in different sectors.
+                        <img src="Assets/Image/vision.jpg" alt="">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Meet Our Team</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div class="team-member p-4">
+                        <img src="Assets/Image/Team Leader1.jpeg" alt="Team Member 1"
+                            class="img-fluid rounded-circle mb-3" width="150">
+                        <h3>Shihab Khan</h3>
+                        <p>Lead Instructor</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="team-member p-4">
+                        <img src="Assets/Image/Team Leader3.jpeg" alt="Team Member 2"
+                            class="img-fluid rounded-circle mb-3" width="150">
+                        <h3>Sara Chowdhury</h3>
+                        <p>Career Advisor</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="team-member p-4">
+                        <img src="Assets/Image/Team Leader2.jpeg" alt="Team Member 3"
+                            class="img-fluid rounded-circle mb-3" width="150">
+                        <h3>Mosharrof Korim</h3>
+                        <p>Technical Trainer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Start -->
+    <footer>
+        <div class="footer-content container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Elite IT Institute is a leading training provider specializing in IT courses, certifications, and
+                    career support to help you launch a successful career in technology.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="About Us.html">About</a></li>
+                    <li><a href="Courses.html">Courses</a></li>
+                    <li><a href="Admit Now.html">Admit Now</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Phone: (123) 456-7890</li>
+                    <li>Email: info@eliteinstitute.com</li>
+                    <li>Address: 123 IT Street, Tech City, 56789</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 footer-bottom">
+                <p>&copy; 2025 Elite IT Institute. All rights reserved.</p>
+            </div>
+            <div class="col-6 footer-bottom">
+
+                <div class="social-links">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
